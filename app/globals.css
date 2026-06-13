@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palette — warm near-black editorial with a signal-orange accent */
+  --color-ink: #0e0c09;
+  --color-surface: #16130e;
+  --color-raised: #201b13;
+  --color-line: #2b261d;
+  --color-cream: #f2ede3;
+  --color-faint: #a39c8f;
+  /* Warm reddish-brown / rust, tuned to the hijab in the portrait */
+  --color-accent: #bf5a36;
+  --color-accent-soft: #d97f54;
+
+  /* Typography — wired to next/font variables set in app/layout.tsx */
+  --font-display: var(--font-grotesk);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-plex);
+
+  /* Marquee */
+  --animate-marquee: marquee 38s linear infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: auto; /* Lenis owns scrolling */
+  }
+
+  body {
+    background-color: var(--color-ink);
+    color: var(--color-cream);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+}
+
+/* Page gutter + measure used by every section */
+@utility container-x {
+  @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+}
+
+/* Mono badge used for section labels and card tags */
+@utility pill {
+  @apply inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3.5 py-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-faint;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Soft orange glow used behind hero and contact */
+@utility glow {
+  background: radial-gradient(
+    ellipse 55% 45% at 50% 0%,
+    rgb(191 90 54 / 0.20),
+    transparent 70%
+  );
+}
