@@ -36,7 +36,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-svh flex-col justify-center overflow-hidden pt-28 pb-24"
+      className="relative flex min-h-svh flex-col justify-center overflow-hidden pt-28 pb-36 sm:pb-24"
     >
       {/* Ambient glow + oversized watermark */}
       <div aria-hidden className="glow absolute inset-0" />
@@ -145,7 +145,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.94, y: 30 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1, ease: EASE, delay: 0.45 }}
-          className="relative mx-auto w-full max-w-[16rem] sm:max-w-sm lg:col-span-5 lg:max-w-none"
+          className="relative mx-auto mb-8 w-full max-w-[16rem] sm:max-w-sm lg:col-span-5 lg:mb-0 lg:max-w-none"
         >
           {/* glow halo */}
           <div

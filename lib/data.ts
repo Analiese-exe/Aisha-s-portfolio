@@ -16,7 +16,7 @@ export const navLinks: NavLink[] = [
 ];
 
 export const hero = {
-  location: "based in Abuja, writing for the world",
+  location: "based in Abuja, writing that earns results",
   headline: "Hey! I'm Aisha",
   highlightWord: "Aisha",
   subheading:
@@ -35,7 +35,7 @@ export const marqueeItems = [
   "Landing Pages",
   "Meta Ad Copy",
   "LinkedIn Ghostwriting",
-  "Social Captions",
+  "Content Strategy",
   "Conversion Psychology",
 ];
 
@@ -61,7 +61,7 @@ export const caseStudies: CaseStudy[] = [
     title: "The $1K Ceiling — Business Coach Email Sequence",
     tag: "Email Marketing",
     hook: "A nurture sequence that turned a stalled $1K/month coach's audience into booked strategy calls.",
-    pull: "$1K months → booked out",
+    pull: "Breaking the $1k/month ceiling",
     approach:
       "We mapped the coach's quietest, most sceptical subscribers and built a sequence that named their real objection — that one more program wouldn't change anything — before pitching the call. Each email earned the next open, so the invitation landed warm instead of cold.",
     deliverables: [
@@ -95,7 +95,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Lokogoma Land Drop — Real Estate Lead Gen",
     tag: "Email Marketing",
     hook: "A story-driven email that repositioned a quiet Abuja neighbourhood as the smart investor's next move.",
-    pull: "The quiet plot smart money wanted",
+    pull: "The quiet area smart money discovered",
     approach:
       "Instead of listing plot features, we told the story of the buyer who moves early — turning an overlooked neighbourhood into a decision the reader didn't want to miss. One email did the qualifying before the sales team ever picked up the phone.",
     deliverables: [
@@ -112,7 +112,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Skyway Travel — Visa & Umrah Ad Campaign",
     tag: "Meta Ad Copy",
     hook: "A set of conversion-focused ads that turned “just looking” travellers into confirmed bookings for Egypt visas and group Umrah packages.",
-    pull: "Looking → booked & boarding",
+    pull: "From confusion to boarding with confidence",
     approach:
       "We wrote to the feeling under the search — the traveller who's been “just looking” for months. Each ad named the hesitation and replaced it with a clear, low-friction next step toward booking.",
     deliverables: [
@@ -146,7 +146,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Why Wireframes Matter — Web Designer LinkedIn Series",
     tag: "LinkedIn Ghostwriting",
     hook: "A 4-part thought-leadership series that positioned a web designer as the go-to expert on conversion-first website structure.",
-    pull: "4 posts. One go-to expert.",
+    pull: "4 posts to becoming the go-to design expert",
     approach:
       "We turned the designer's everyday expertise into a four-part argument for conversion-first structure — each post opening a loop the next one closed, so readers kept coming back and the comments did the marketing.",
     deliverables: [
@@ -232,16 +232,17 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: "social-media-captions",
-    title: "Social Media Captions",
+    slug: "social-media-content-strategy",
+    title: "Social Media Content Strategy",
     description:
-      "On-brand captions that keep your audience engaged between launches and quietly warm them up for your next offer.",
-    tagline: "On-brand captions that keep your audience warm between launches.",
+      "Strategic, on-brand content planning — pillars, themes, and captions that keep your audience engaged and primed for your next offer.",
+    tagline:
+      "A clear content plan that keeps your audience engaged and warm between launches.",
     includes: [
+      "Content pillars & themes",
+      "Monthly content plan",
       "On-brand captions",
       "Hook + body + CTA structure",
-      "Batch-ready content",
-      "Voice consistency across posts",
       "Launch-warming sequencing",
     ],
   },
@@ -283,25 +284,48 @@ export const testimonials: Testimonial[] = [
   {
     quote:
       "Working with Aisha felt like handing my brand to someone who actually understood it. The LinkedIn series she ghostwrote for me got more comments and DMs than anything I'd posted in a year.",
-    name: "Daniel Yusuf",
-    role: "Founder, Webframe Studio",
+    name: "Ukeje Analiese Ogochukwu",
+    role: "Freelance Product Designer",
   },
   {
     quote:
-      "Her ad copy for our Umrah package sold out faster than we expected. She knows exactly how to make people feel something before they even click “Learn More.”",
-    name: "Hauwa Bello",
-    role: "Skyway Travel & Tours",
+      "She is excellent in social media content strategy and social media management.",
+    name: "Mansur Mahdi",
+    role: "CEO, Skyway Travel and Tours",
   },
   {
     quote:
-      "I came to Aisha with a vague idea and a messy list of subscribers. She turned it into a launch email that felt personal, warm, and genuinely persuasive — our cohort filled up a week early.",
-    name: "Tope Adeyemi",
-    role: "Savvy Bee",
+      "Aisha clearly understands how to turn buyer psychology into copy that moves people. It's exactly the kind of strategic writing I'd want behind a brand — I'm looking forward to working with her.",
+    name: "Mr Tunwase Osinaike",
+    role: "Professional Endorsement",
   },
 ];
 
+export const framework = {
+  label: "How I Work",
+  title: "The Buyer-First Framework",
+  lead: "Every word is built on what your buyer is already thinking — not on guesswork.",
+  steps: [
+    {
+      no: "01",
+      title: "Understand the buyer",
+      body: "Before writing a single word, I dive deep into buyer psychology, uncovering customer desires, objections, motivations, fears, and decision-making triggers.",
+    },
+    {
+      no: "02",
+      title: "Craft the message",
+      body: "Using these insights, I craft messaging that speaks directly to what your audience is already thinking and feeling, creating copy that feels less like marketing and more like a conversation.",
+    },
+    {
+      no: "03",
+      title: "Drive the action",
+      body: "The result? Strategic copy designed to connect, persuade, and drive action.",
+    },
+  ],
+};
+
 export const aboutBio: string[] = [
-  "I'm Aisha — a marketing copywriter based in Abuja, helping coaches, online service providers, and growing businesses turn their audience into paying clients through high-converting organic content and strategic ad systems.",
+  "I'm Aisha — a marketing copywriter based in Abuja, Nigeria, helping coaches, online service providers, and growing businesses turn their audience into paying clients through high-converting organic content and strategic ad systems.",
   "I specialise in email sequences, ad copy, landing pages, and LinkedIn ghostwriting that turn attention into action. My focus isn't just “writing nice things” — it's understanding what your audience is actually thinking, and meeting them there with the right message at the right moment.",
   "Whether it's a single high-stakes sales email or a full nurture sequence, my goal is always the same: help your business grow its visibility and increase inquiries using clear, strategic, conversion-driven messaging.",
 ];
@@ -363,7 +387,7 @@ export const faqs: Faq[] = [
   {
     question: "What services do you offer?",
     answer:
-      "Email marketing (sequences & campaigns), landing/sales page copy, Meta ad copy, LinkedIn ghostwriting, and social media captions — tailored to your brand voice and business goals.",
+      "Email marketing (sequences & campaigns), landing/sales page copy, Meta ad copy, LinkedIn ghostwriting, and social media content strategy — tailored to your brand voice and business goals.",
   },
   {
     question: "How does the process work from start to finish?",
@@ -383,22 +407,16 @@ export const faqs: Faq[] = [
 ];
 
 const EMAIL_ADDRESS = "aishaawaisu01@gmail.com";
-const EMAIL_SUBJECT = "Project inquiry — Copywriting";
-const EMAIL_BODY = `Hi Aisha,
 
-I'd love to work with you on a project. A few quick details:
-
-• Service needed:
-• Timeline:
-• Budget range:
-• A little about my business:
-
-Thanks!`;
-
-/** Opens the visitor's default mail client (Gmail-compatible) pre-filled. */
+/**
+ * Opens the visitor's default mail client (Gmail-compatible) pre-filled.
+ * Kept short and single-line so every mail handler accepts the link.
+ */
 const emailHref = `mailto:${EMAIL_ADDRESS}?subject=${encodeURIComponent(
-  EMAIL_SUBJECT
-)}&body=${encodeURIComponent(EMAIL_BODY)}`;
+  "Project inquiry"
+)}&body=${encodeURIComponent(
+  "Hi Aisha, I'd love to work with you on a project."
+)}`;
 
 export const contact = {
   calendly: "https://calendly.com/aishaawaisu01/30min",
